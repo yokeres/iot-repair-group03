@@ -3,38 +3,43 @@
 
 组号：03
 
-成员A GitHub用户名：yokeres
+| 成员 | 角色 | GitHub 用户名 | 主要成果 |
+| --- | --- | --- | --- |
+| A | 组长 | yokeres | 需求说明、用例图、仓库初始化与提交索引 |
+| B | 组员 | Esponjs | 状态图、简单类图及源材料 |
+| C | 组员 | Sunsh-212 | Python 状态函数、测试记录与真实测试输出 |
 
-成员B GitHub用户名：Esponjs
-
-成员C GitHub用户名：待填写
-
-本组选定语言：Java / Python 二选一，保留一项。
+本组选定语言：**Python 3**
 
 ## 范围
-只分析查看设备、提交报修、更新状态。只编程实现状态判断函数。
-不接入真实硬件，不实现数据库、网页、登录或MQTT。
+
+只分析查看设备、提交报修、更新工单状态三项功能，只编程实现状态判断函数。
+
+不接入真实硬件，不实现数据库、网页、登录或 MQTT。
 
 ## 固定规则
-新工单为PENDING。仅允许PENDING转PROCESSING、PROCESSING转COMPLETED。
-其他转换一律拒绝，包括状态不变。
 
-## 分工
-A完成docs/requirements.md与docs/usecase.md及图文件。
-B完成docs/models.md及图文件。
-C完成一种语言的函数与docs/test-results.md。
-图文件放docs/assets，保留可编辑源材料。
-三个主要PR合并后，由A另开分支整理docs/submission.md。
+新工单为 `PENDING`。仅允许 `PENDING → PROCESSING`、`PROCESSING → COMPLETED`，其他转换一律拒绝，包括状态不变。
+
+## 实验成果
+
+- [x] 3 条功能需求：`docs/requirements.md`
+- [x] 用例图与可编辑源文件：`docs/usecase.md`、`docs/assets/usecase.svg`、`docs/assets/usecase.puml`
+- [x] 状态图与简单类图：`docs/models.md`
+- [x] Python 状态函数：`src/python/status_rule.py`
+- [x] 4 项测试记录：`docs/test-results.md`
+- [ ] 个人分支、PR、交叉评审与最终提交索引按 GitHub 协作流程补充
 
 ## 运行
-Python：进入src/python，运行python test_status_rule.py。
-Java：进入src/java，先javac StatusRule.java StatusRuleTest.java，
-再java StatusRuleTest。
 
-起始函数尚未实现，预期2项FAIL、2项PASS、退出码1。
-完成函数后，规定4项测试应全部PASS、退出码0。
-不要修改测试预期来获得通过，也不提交.class或__pycache__。
+在 `src/python` 目录运行：
+
+```bash
+python3 test_status_rule.py
+```
+
+预期 `Summary: 4/4 passed`，退出码为 `0`。
 
 ## 协作
-每人一个个人分支和主要PR，交叉评审后合入main。
-初始化之外不直接写main。操作详见配套GitHub教程。
+
+每人一个个人任务 Issue、个人分支和主要 PR；按 A 审 B、B 审 C、C 审 A 的顺序交叉评审，修订后合入 `main`。最终以最新 `main` 下载 ZIP 后复测的结果为准。
