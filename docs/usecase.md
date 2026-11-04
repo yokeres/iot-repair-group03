@@ -2,7 +2,7 @@
 
 ## 用例图
 
-![校园物联网设备报修用例图](assets/usecase.svg)
+![校园物联网设备报修用例图](assets/usecase.png)
 
 可编辑源文件：[usecase.puml](assets/usecase.puml)
 
