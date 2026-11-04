@@ -23,7 +23,7 @@
 ## 实验成果
 
 - [x] 3 条功能需求：`docs/requirements.md`
-- [x] 用例图与可编辑源文件：`docs/usecase.md`、`docs/assets/usecase.svg`、`docs/assets/usecase.puml`
+- [x] 用例图与可编辑源文件：`docs/usecase.md`、`docs/assets/usecase.png`、`docs/assets/usecase.puml`
 - [x] 状态图与简单类图：`docs/models.md`
 - [x] Python 状态函数：`src/python/status_rule.py`
 - [x] 4 项测试记录：`docs/test-results.md`
