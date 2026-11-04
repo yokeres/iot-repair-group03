@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+actor "报修人" as Reporter
+actor "维修人员" as Maintainer
+
+rectangle "校园物联网设备报修系统" {
+  usecase "查看设备信息" as UC1
+  usecase "提交报修" as UC2
+  usecase "更新工单状态" as UC3
+}
+
+Reporter --> UC1
+Reporter --> UC2
+Maintainer --> UC1
+Maintainer --> UC3
+@enduml
