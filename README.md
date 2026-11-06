@@ -1,4 +1,3 @@
-
 # 校园物联网设备报修实验
 
 组号：03
@@ -7,7 +6,7 @@
 | --- | --- | --- | --- |
 | A | 组长 | yokeres | 需求说明、用例图、仓库初始化与提交索引 |
 | B | 组员 | Esponjs | 状态图、简单类图及源材料 |
-| C | 组员 | Sunsh-212 | Python 状态函数、测试记录与真实测试输出 |
+| C | 组员 | Sunsh-212 | Python 状态函数与实际测试记录 |
 
 本组选定语言：**Python 3**
 
@@ -25,11 +24,11 @@
 
 - [x] 3 条功能需求：`docs/requirements.md`
 - [x] 用例图与可编辑源文件：`docs/usecase.md`、`docs/assets/usecase.png`、`docs/assets/usecase.puml`
-- [x] 状态图与简单类图内容：`docs/models.md`（B 的个人分支待创建 PR）
+- [x] 状态图与简单类图内容：`docs/models.md`（B 的 PR #5 已由 A 批准，待合并）
 - [x] Python 状态函数：`src/python/status_rule.py`
 - [x] 4 项测试及真实输出：`docs/test-results.md`
-- [x] 最新 `main` ZIP 复测：2026-11-06，`4/4 passed`，退出码 `0`
-- [ ] 个人分支、PR、交叉评审与最终提交索引全部完成
+- [x] 当前 `main` ZIP 复测：2026-11-06，`4/4 passed`，退出码 `0`
+- [ ] 三人任务 Issue、主要 PR 与交叉评审全部完成
 
 ## 运行
 
@@ -43,10 +42,10 @@ python3 test_status_rule.py
 
 ## 协作进度
 
-- **A**：Issue [#1](https://github.com/yokeres/iot-repair-group03/issues/1)，分支 `docs/requirements-a`，主要 PR [#2](https://github.com/yokeres/iot-repair-group03/pull/2)。已请求 C 评审；目前 C 仅留下评论，仍需正式提交 `Approve` 或 `Request changes`。
-- **B**：Issue [#3](https://github.com/yokeres/iot-repair-group03/issues/3)，分支 `docs/models-b` 已完成状态图、类图和可编辑源文件，尚需创建 PR 并请求 A 评审。
-- **C**：分支 `feat/status-c` 当前与 `main` 相同，尚需创建任务 Issue、提交自己的测试记录并创建 PR；同时需正式评审 A 的 PR #2。
-- **最终索引**：A 已在分支 `docs/submission-a` 创建 PR [#4](https://github.com/yokeres/iot-repair-group03/pull/4)，待 B、C 的 PR 完成后补全真实链接再合并。
+- **A**：Issue [#1](https://github.com/yokeres/iot-repair-group03/issues/1)，分支 `docs/requirements-a`，主要 PR [#2](https://github.com/yokeres/iot-repair-group03/pull/2)。已请求 C 评审；C 目前只留下评论，仍需正式提交 `Approve` 或 `Request changes`。
+- **B**：Issue [#3](https://github.com/yokeres/iot-repair-group03/issues/3)，分支 `docs/models-b`，主要 PR [#5](https://github.com/yokeres/iot-repair-group03/pull/5)。A 已完成内容核验并批准，PR 可进入最终合并阶段。
+- **C**：尚无任务 Issue；分支 `feat/status-c` 目前没有本人成果提交。PR #6 的 base/compare 方向相反且文件差异为 0，随后 PR #7 只产生空合并，均不能作为 C 的主要 PR。C 仍需从最新 `main` 在当前个人分支提交实际修改，创建正式 PR，并评审 A 的 PR #2。
+- **最终索引**：A 已在分支 `docs/submission-a` 创建 PR [#4](https://github.com/yokeres/iot-repair-group03/pull/4)，待 C 的有效 PR 和三人评审补齐后更新真实链接并合并。
 
 ## 交叉评审顺序
 
