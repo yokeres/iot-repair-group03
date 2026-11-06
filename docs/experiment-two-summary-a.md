@@ -27,7 +27,7 @@ B 的 PR #5 第一次提交时，模型内容符合要求，但 Pull Request 的
 
 ## 协作中发现的问题
 
-C 目前尚未形成有效的主要 PR。PR #6 的 base 与 compare 方向相反，文件差异为 0；PR #7 只产生了空合并，也不能作为 C 的代码成果。C 需要在 `feat/status-c` 分支提交本人实际修改和测试记录，创建 `base=main` 的正式 PR，并请 B 评审；同时 C 还需正式评审 A 的 PR #2。
+A 已为 C 建立任务 Issue #9。C 目前尚未形成有效的主要 PR：PR #6 的 base 与 compare 方向相反，文件差异为 0；PR #7 只产生了空合并，也不能作为 C 的代码成果。C 需要在 `feat/status-c` 分支提交本人实际修改和测试记录，创建 `base=main` 的正式 PR，并请 B 评审；同时 C 还需正式评审 A 的 PR #2。
 
 ## 体会
 
