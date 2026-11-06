@@ -1,0 +1,42 @@
+@startuml
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Microsoft YaHei"
+skinparam shadowing false
+skinparam dpi 200
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor #F4F8FF
+  BorderColor #2F5597
+  FontColor #1F3864
+  FontSize 16
+  AttributeFontSize 14
+}
+skinparam note {
+  BackgroundColor #FFF8E5
+  BorderColor #BF9000
+  FontSize 13
+}
+hide circle
+hide empty members
+class "Device" as Device {
+  - deviceId : String
+  - name : String
+  - location : String
+}
+
+class "WorkOrder" as WorkOrder {
+  - orderId : String
+  - deviceId : String
+  - description : String
+  - status : String
+}
+
+Device "1" --> "0..*" WorkOrder : 产生
+
+note right of WorkOrder
+  status 取值：PENDING / PROCESSING / COMPLETED
+  一台设备可产生 0 到多张工单
+  每张工单必须对应 1 台设备
+end note
+
+@enduml
