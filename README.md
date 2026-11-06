@@ -28,6 +28,7 @@
 - [x] Python 状态函数：`src/python/status_rule.py`
 - [x] 4 项测试及真实输出：`docs/test-results.md`
 - [x] 当前 `main` ZIP 复测：2026-11-06，`4/4 passed`，退出码 `0`
+- [x] A 的实验二个人小结：`docs/experiment-two-summary-a.md`
 - [ ] 三人任务 Issue、主要 PR 与交叉评审全部完成
 
 ## 运行
