@@ -19,8 +19,9 @@
 
 个人分支从 `main` 创建后，分支上的提交不会立即出现在 `main`。只有经过 Pull Request 评审并合并后，修改才进入 `main`，因此个人修改与共享版本相互隔离。
 
-## 待后续实验完成
+## 协作记录
 
-- A 的任务 Issue 与主要 PR
-- 三人交叉评审记录
-- 最新 `main` 的最终 ZIP 复测
+- 任务 Issue：[#1](https://github.com/yokeres/iot-repair-group03/issues/1)
+- 主要 PR：[#2](https://github.com/yokeres/iot-repair-group03/pull/2)
+- 已请求 Sunsh-212 按“C 审 A”流程评审。
+- 2026-11-06 从最新 `main` 下载 ZIP 复测，结果为 `4/4 passed`、退出码 `0`。
