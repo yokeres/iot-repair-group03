@@ -1,0 +1,40 @@
+﻿@startuml
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Microsoft YaHei"
+skinparam shadowing false
+skinparam dpi 200
+skinparam state {
+  BackgroundColor #F4F8FF
+  BorderColor #2F5597
+  FontColor #1F3864
+  FontSize 15
+}
+skinparam note {
+  BackgroundColor #FFF8E5
+  BorderColor #BF9000
+  FontSize 13
+}
+hide empty description
+left to right direction
+
+state "待处理\nPENDING" as PENDING
+state "处理中\nPROCESSING" as PROCESSING
+state "已完成\nCOMPLETED" as COMPLETED
+
+[*] --> PENDING : 创建工单
+PENDING --> PROCESSING : 开始维修
+PROCESSING --> COMPLETED : 完成维修
+COMPLETED --> [*]
+
+note right of PENDING
+  初始状态；只允许“开始维修”
+  跳级、回退、同状态均拒绝
+end note
+
+note right of COMPLETED
+  本次业务终态
+  不设置撤销或重新打开
+end note
+
+@enduml
+
