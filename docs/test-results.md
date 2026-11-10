@@ -4,7 +4,8 @@
 
 测试人员 GitHub 用户名：Sunsh-212
 
-运行命令：`py "D:\下载\test_status_rule.py"`
+运行命令：`cd src/python && python3
+test_status_rule.py`
 
 | 编号 | 当前状态 | 目标状态 | 预期 | 实际 | 结论 |
 | --- | --- | --- | --- | --- | --- |
