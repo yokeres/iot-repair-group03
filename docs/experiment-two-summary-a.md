@@ -27,7 +27,7 @@ B 的 PR #5 第一次提交时，模型内容符合要求，但 Pull Request 的
 
 ## 协作中发现的问题
 
-A 已为 C 建立任务 Issue #9。C 目前尚未形成有效的主要 PR：PR #6 的 base 与 compare 方向相反，文件差异为 0；PR #7 只产生了空合并，也不能作为 C 的代码成果。C 需要在 `feat/status-c` 分支提交本人实际修改和测试记录，创建 `base=main` 的正式 PR，并请 B 评审；同时 C 还需正式评审 A 的 PR #2。
+C 已建立任务 Issue #10，并提交方向正确的 PR #11（base=main，compare=feat/status-c）。PR #11 仍有测试命令绝对路径、测试脚本比较表达式和 Issue 关联需要修正；修订后请 B 正式评审。PR #6、#7、#8 的方向或差异不符合要求，不能作为主要 PR。C 还需把对 A 的 PR #2 的评审从 COMMENTS 提交为正式 Approve。
 
 ## 体会
 
